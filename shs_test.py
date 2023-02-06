@@ -1,4 +1,5 @@
 import streamlit as st
+import numpy as np
 
 # 탭 적용 : PJ1, PJ2, PJ3
 tab1, tab2, tab3 = st.tabs(['PJ1', 'PJ2', 'PJ3'])
@@ -7,7 +8,6 @@ with tab1:
     st.header("Green Remodeling")
     st.image("그린리모델링.jpg", width=500)
     st.text("2016년 이후로 그린리모델링 업무를 수행해왔습니다.")
-
 
 with tab2:
     st.header("Regression Metro")
