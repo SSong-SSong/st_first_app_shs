@@ -1,5 +1,6 @@
 import streamlit as st
 import numpy as np
+from PIL import Image
 
 # 탭 적용 : PJ1, PJ2, PJ3
 tab1, tab2, tab3 = st.tabs(['PJ1', 'PJ2', 'PJ3'])
@@ -22,4 +23,6 @@ st.title(' 업로드해주세요.')
 
 # Image 업로드
 image_upload = st.file_uploader('이미지 첨부', type=['png', 'jpg', 'jpeg'])
+if image_upload is not None:
+  st.image(image_upload)
 
