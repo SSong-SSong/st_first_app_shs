@@ -2,6 +2,9 @@ import streamlit as st
 import numpy as np
 from PIL import Image
 
+#이것은 타이틀
+st.title("EAN_기술연구소_스마트도시연구본부")
+
 # 탭 적용 : PJ1, PJ2, PJ3
 tab1, tab2, tab3 = st.tabs(['PJ1', 'PJ2', 'PJ3'])
 
