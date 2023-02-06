@@ -1,7 +1,10 @@
 import streamlit as st
 
-# 타이틀 적용 예시 fffff
-st.title('송한솔 이것은 타이틀 입니다')
+# 타이틀 적용 : 파일을 업로드해주세요.
+st.title('파일을 업로드해주세요.')
+
+# Image 업로드
+image_upload = st.file_uploader('이미지 첨부', type=['png', 'jpg', 'jpeg'])
 
 # 특수 이모티콘 삽입 예시
 # emoji: https://streamlit-emoji-shortcodes-streamlit-app-gwckff.streamlit.app/
